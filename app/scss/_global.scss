@@ -1,0 +1,186 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: rgba(51, 26, 47, 0.8);
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 40px;
+
+	&.open {
+		overflow: hidden;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+.container {
+	max-width: 1560px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #331A2F;
+}
+
+h1,
+h2 {
+	font-weight: 700;
+}
+
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 56px;
+	line-height: 80px;
+}
+
+h2 {
+	font-size: 48px;
+	line-height: 64px;
+}
+
+h3 {
+	font-size: 42px;
+	line-height: 55px;
+}
+
+h4 {
+	font-size: 35px;
+	line-height: 29px;
+}
+
+h5 {
+	font-size: 24px;
+	line-height: 36px;
+}
+
+h6 {
+	font-size: 18px;
+	line-height: 25px;
+}
+
+p {
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 40px;
+
+	&:not(:last-child) {
+		margin-bottom: 15px;
+	}
+}
+
+a {
+	color: inherit;
+}
+
+a,
+button {
+	transition: all .3s;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.wrapper {
+	padding-top: 66px;
+}
+
+.select-color {
+	color: $primary;
+}
+
+.center {
+	text-align: center;
+}
+
+.breadcrumbs {
+	align-items: center;
+	font-size: 16px;
+	line-height: 19px;
+	color: rgba(51, 26, 47, 0.5);
+
+	&-item {
+		position: relative;
+
+		&:not(:last-child) {
+			padding-right: 18px;
+		}
+
+		&:last-child {
+			pointer-events: none;
+		}
+
+		&:not(:last-child)::before {
+			position: absolute;
+			content: "-";
+			right: 5px;
+
+		}
+	}
+
+	&-item a:hover {
+		color: #222;
+	}
+
+}
+
+.text-line {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: -5px;
+		background: linear-gradient(264.91deg, #7C4EAB 0.73%, #DD51D4 95.85%);
+		border-radius: 5px;
+		height: 7px;
+		width: 100%;
+	}
+}
+
+.background {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(#000, 0.5);
+	z-index: -1;
+	opacity: 0;
+
+	&.open {
+		opacity: 1;
+		z-index: 8;
+	}
+}
