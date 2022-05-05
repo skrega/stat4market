@@ -70,11 +70,23 @@
     </div>
   </header>
   <div class="wrapper">
+    <div class="shape left"></div>
+    <div class="shape right"></div>
     <main class="main">
       <div class="container">
-        <ul class="breadcrumbs d-flex">
-          <li class="breadcrumbs-item"><a href="/">Главная</a></li>
-          <li class="breadcrumbs-item"><a href="#">Обучение</a></li>
+        <ul class="breadcrumbs d-flex" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li class="breadcrumbs-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a href="/" title="Главная" itemprop="item">
+              <span itemprop="name">Главная</span>
+              <meta itemprop="position" content="0">
+            </a>
+          </li>
+          <li class="breadcrumbs-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a href="#" title="Смартфоны" itemprop="item">
+              <span itemprop="name">Обучение</span>
+              <meta itemprop="position" content="1">
+            </a>
+          </li>
         </ul>
         <section class="row banner">
           <div class="banner__inner d-flex">

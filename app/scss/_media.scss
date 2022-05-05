@@ -1,3 +1,20 @@
+@media (max-width: 1670px) {
+    .shape.left {
+        left: -38vw;
+        width: 38.5vw;
+        height: 38.5vw;
+
+        &::before {
+            width: 38vw;
+            height: 38vw;
+        }
+    }
+
+    .shape.right {
+        top: 524px;
+    }
+}
+
 @media (max-width: 1530px) {
     body {
         font-size: 20px;
@@ -46,6 +63,24 @@
     .text-line::before {
         border-radius: 4.99971px;
         height: 6px;
+    }
+
+    .shape.right {
+        display: none;
+    }
+
+    .shape.left {
+        left: -421px;
+        top: -94px;
+        width: 434px;
+        height: 434px;
+
+        &::before {
+            width: 434px;
+            height: 434px;
+            right: 11px;
+            bottom: -11px;
+        }
     }
 
     //header
@@ -201,10 +236,14 @@
 
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1190px) {
 
     .wrapper {
         padding-top: 45px;
+    }
+
+    .shape.left {
+        display: none;
     }
 
     //header
